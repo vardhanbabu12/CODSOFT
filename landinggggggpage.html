@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: auto;
+}
+.nav{
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 100px;
+}
+.search{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 1000px;
+}
+.search input{
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: solid 3px;
+    width: 250px;
+   
+
+}
+.search button{
+    background-color: rgb(27, 238, 132);
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: -43px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search button img{
+    height: 20px;
+}
+.nav ul{
+    margin-top: 40px;
+    display: flex;
+    gap:50px
+}
+.nav ul li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+
+}
+.nav ul li a:hover{
+    color:rgb(4, 182, 4);
+}
+.main{
+    background-color: color-mix(in srgb, gold 30%, white 70%);
+    height: 400px;
+}
+.ima{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 900px;
+}
+.ima img{
+    height: 300px;
+}
+.leaf{
+    position: absolute;
+    height: 500px;
+}
+.leaf img{
+    height: 250px;
+    margin-left:000px ;
+}
+.text{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.text h1{
+    font-size:40px;
+    margin-bottom: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.text h6{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(2, 124, 2);
+}
+.text h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(4, 128, 4);
+}
+.text button{
+    height: 40px;
+    width:150px;
+    border-radius: 20px;
+    margin-top: 10px;
+   background-color: rgb(14, 134, 14);
+   color: white;
+}
+.text button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.box{
+    height:150px;
+    width:90%;
+    position: absolute;
+    margin-top: -50px;
+    background-color:white;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    gap:170px;
+    box-shadow: 0px 1.5px 0px 0.2px rgb(136, 128, 128);
+}
+.box1 img,.box2 img,.box3 img{
+    height: 30px;
+    margin-left: 60px;
+}
+.box1,.box2,.box3{
+    display: grid;
+    justify-content: center;
+    width:200px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box1 h3,.box2 h3,.box3 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1 p,.box2 p,.box3 p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.cardsection{
+    display: flex;
+    height: 300px;
+    width:100%;
+    position: relative;
+    margin-top: 180px;
+   justify-content: center;
+   gap:50px
+}
+.card{
+    height: 260px;
+    width:250px;
+    border: solid 3px rgb(255, 234, 118);
+    box-shadow: 2px 2px 0px 1px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.card img{
+    height: 150px;
+}
+.card h2{
+    letter-spacing: 0.01em;
+    font-weight: 600;
+}
+.card h4{
+    letter-spacing: 0.01em;
+    font-weight: 600;
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+.prices{
+    margin-top: 140px;
+    height:100px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.prices h1{
+    letter-spacing: 0.03em;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.prices ul{
+    display: flex;
+    gap:40px;
+    margin-top: 40px;
+
+}
+.prices ul li{
+    list-style: none;
+}
+.prices ul li a{
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+}
+.prices ul li a:hover{
+    color: rgb(10, 192, 10);
+    border-bottom: solid ;
+}
+.cardsection1{
+    display: flex;
+    height: 300px;
+    width:100%;
+    position: relative;
+    margin-top: 150px;
+   justify-content: center;
+   gap:50px
+}
+.card1h3{
+    font-size: 25px;
+}
+.card1 h4{
+    font-size: 20px;
+}
+.card1 h4 button{
+    height: 25px;
+    width: 70px;
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+
+
+}
+.card1 h4 button:hover{
+    background-color: rgb(6, 185, 6);
+    color: black;
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+.card1{
+    height: 300px;
+    width:300px;
+    border: solid 3px rgb(196, 167, 4);
+    box-shadow: 2px 2px 0px 1px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.card1:hover{
+    border:solid 3px rgb(4, 189, 4);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 0px 1px green;
+    transition: 0.1s;
+}
+.total{
+    display: flex;
+    gap:100px;
+  background-color: color-mix(in srgb, rgb(11, 139, 11) 60%, white 40%);
+  justify-content: center;
+  margin-top: 100px;
+
+  }
+  .address{
+    
+    height: 200px;
+    position: relative;
+    width:200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .address1{
+    height: 200px;
+    position: relative;
+    width:200px;
+    margin-top: 20px;
+    margin-right: 00px;
+
+    
+  }
+  .address2{
+    height: 200px;
+    position: relative;
+    width:200px;
+    margin-top: 20px;
+    margin-right: 00px;
+
+  }
+.address ul li,.address1 ul li,.address2 ul li{
+  list-style: none;
+  margin-top: 10px;
+}
+.address ul li a,.address1 ul li a,.address2 ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.address ul li a h2:hover,.address1 ul li a h2:hover,.address2 ul li a h2:hover{
+  transform: translateY(-5px);
+  transition: 1s;
+   color: white;
+}
+.address ul li a:hover,.address1 ul li a:hover,.address2 ul li a:hover{
+  color: black;
+  transition: 0.4s;
+  
+}
+hr{
+  border: solid 1px;
+  width: 90%;
+  align-items: center;
+  margin-left: 50px;
+}
+.ending{
+  text-align: center;
+}
+.ending h3{
+  margin-top: 10px;
+}
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+<div class="search">
+    <input type="textbox" name="search" placeholder="search..">
+    <button><img src="images/search.png"></button>
+</div>
+    </div>
+    <div class="main">
+        <div class="leaf">
+            <img src="images/leaf.png">
+        </div>
+        <div class="text">
+            <h6>Fresh fruits</h6>
+            <h1>ORANGE LEMON</h1>
+            <h4>₹140.00/package</h4>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="ima">
+        <img src="images/download-removebg-preview (6).png">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="images/OIP-removebg-preview.png">
+            <h3>FREE SHIPPING</h3>
+            <p>For all orders over ₹200</p>
+        </div>
+        <div class="box2">
+            <img src="images/time.png">
+            <h3>DELIVERY ON TIME</h3>
+            <p>If good have problems</p>
+        </div>
+        <div class="box3">
+            <img src="images/th-removebg-preview.png">
+            <h3>SECURE PAYMENT</h3>
+            <p>100% secure payments</p>
+        </div>
+    </div>
+<div class="cardsection">
+    <div class="card">
+        <img src="images/oranges.png">
+        <h2>Fresh Fruit</h2>
+        <h4>Oranges</h4>
+    </div>
+    <div class="card">
+        <img src="images/pineapple.png">
+        <h2>Fresh Fruit</h2>
+        <h4>PineApple</h4>
+    </div>
+    <div class="card">
+        <img src="images/strawberries.png">
+        <h2>Fresh Fruit</h2>
+        <h4>strawberries</h4>
+    </div>
+    <div class="card">
+        <img src="images/fruit juices.png">
+        <h2>Fresh Fruit</h2>
+        <h4>Fruit Juices</h4>
+    </div>
+</div>
+<div class="prices">
+    <h1>Featured Product</h1>
+    <ul>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Oranges</a></li>
+        <li><a href="#">Fresh meat</a></li>
+        <li><a href="#">Vegetables</a></li>
+        <li><a href="#">Fastfood</a></li>
+    </ul>
+</div>
+<div class="cardsection1">
+    <div class="card1">
+        <img src="images/mangos.png">
+        <h3>mangos</h3>
+        <h4>₹200<button>order</button></h4>
+    </div>
+    <div class="card1">
+        <img src="images/leafy.png">
+        <h3>Leafy vegetables</h3>
+        <h4>₹100<button>order</button></h4>
+
+    </div>
+    <div class="card1">
+        <img src="images/blackberries.png">
+        <h3>blackberries</h3>
+        <h4>₹200<button>order</button></h4>
+    </div>
+    <div class="card1">
+        <img src="images/apple.png">
+        <h3>Apples</h3>
+        <h4>₹250<button>order</button></h4>
+
+    </div>
+    
+</div>
+<div class="total">
+    <div class="address">
+      <ul>
+        <li><a href="#"><h2>About US</h2></a></li>
+        <li><a href="#">Our Heritage</a></li>
+        <li><a href="#">Our Company</a></li>
+        <li><a href="#">Fresh products</a></li>
+      </ul>
+    </div>
+    <div class="address1">
+      <ul>
+        <li><a href="#"><h2>Responsibility</h2></a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Ethical Sourcing</a></li>
+        <li><a href="#">diversity</a></li>
+      </ul>
+    </div>
+    <div class="address2">
+      <ul>
+        <li><a href="#"><h2>Quick Links</h2></a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Season's Gifting</a></li>
+        <li><a href="#">FAQ'S</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="ending"><hr>
+    <h3>copyright@2023:all rights are reserved</h3>
+  </div>
+</body>
+</html>
